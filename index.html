@@ -25,14 +25,14 @@
             </div>
         </div>
         <!-- Location and SPF form -->
-        <div id="form1" class="container">
+        <div class="container">
             <div class="row">
-                <form class="col s12">
+                <form id="form1" class="col s12">
                     <h5 class="center">Enter Your City and SPF Level</h5>
                     <!-- Your City -->
                     <div class="row">
                         <div class="input-field col s12">
-                            <input type="text" class="validate" id="city" required>
+                            <input type="text" class="validate" id="city" value="" required>
                             <label for="city">Your City</label>
                         </div>
                     </div>
@@ -50,6 +50,8 @@
                 </form>
             </div>
         </div>
+        <!-- Weather response validation -->
+        <h5 id="temp"></h5>
         <!-- Form 2 form -->
         <div id="form2" class="container">
             <h1>Form 2</h1>
@@ -58,7 +60,7 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
 </html>
