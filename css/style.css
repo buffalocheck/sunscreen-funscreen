@@ -1,13 +1,20 @@
 main {
     background: skyblue url("../img/sunny1.jpg") no-repeat fixed center;
+    min-height: 200vw;
 }
 
 #form1 {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-#splash-headline {
-    margin: 2em auto;
+.splash-headline {
+    margin: 1em auto 0.3em;
+    font-family: 'Pacifico', cursive;
+    color: rgba(242, 134, 130, 1);
+}
+
+.sub-headline {
+    margin: 0.3em auto 1em;
     font-family: 'Pacifico', cursive;
     color: rgba(242, 134, 130, 1);
 }
@@ -16,4 +23,10 @@ footer {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(151, 151, 151, 1);
     margin-top: 20em;
+    margin-bottom: 0;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding: 1em;
 }
