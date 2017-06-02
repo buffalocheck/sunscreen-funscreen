@@ -24,7 +24,7 @@ $('#form1').on('submit', function(e) {
     var city = $('#city').val();
 
     $.ajax({
-        url: weatherUrl + city + '&units=imperial&appid=02e84210a52ed716535f02989864d080',
+        url: weatherUrl + city + '&units=imperial&appid=' + key,
         method: 'GET',
         success: function(response) {
             console.log(response);
@@ -53,6 +53,9 @@ $('#form1').on('submit', function(e) {
                     console.log('+++++++++++++++++');
                     console.log(response.data);
                     $('#UVLevel').html('The UV Level in ' + city + ' is ' + response.data + '.');
+                    var spf = $('#spf').val();
+                    var applyMinutes = Math.floor(spf * 32 / response.data);
+                    $('#ApplyFreq').html('You should apply sunscreen every ' + applyMinutes + ' minutes.');
                 }
             });
         }
