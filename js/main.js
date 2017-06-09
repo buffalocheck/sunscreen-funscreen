@@ -1,8 +1,9 @@
 // Take a look at the openweathermaps API documentation: http://openweathermap.org/current
 
-var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=";
+// Added https://cors-anywhere.herokuapp.com/ in front of the calls to provide https to heroku
+var weatherUrl = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=";
 
-var UVLevelUrl = "http://api.openweathermap.org/v3/uvi/";
+var UVLevelUrl = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/v3/uvi/";
 
 
 // Get an api key: http://openweathermap.org/appid#get
